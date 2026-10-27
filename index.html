@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>КиноКаталог - фильмы по жанрам</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a href="#" class="logo">КиноКаталог</a>
+    <nav class="nav">
+      <a href="#catalog">Каталог</a>
+      <a href="#about">О проекте</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>КиноКаталог</h1>
+    <p>Подборка фильмов по жанрам - найди, что посмотреть вечером</p>
+    <a href="#catalog" class="btn">Смотреть каталог</a>
+  </div>
+</section>
+
+<section id="catalog" class="section">
+  <div class="container">
+    <h2>Каталог фильмов</h2>
+    <div class="filters">
+      <button class="filter-btn active" data-genre="all">Все</button>
+      <button class="filter-btn" data-genre="action">Боевик</button>
+      <button class="filter-btn" data-genre="comedy">Комедия</button>
+      <button class="filter-btn" data-genre="drama">Драма</button>
+      <button class="filter-btn" data-genre="scifi">Фантастика</button>
+    </div>
+    <div class="cards" id="cards">
+        <div class="card" data-genre="scifi">
+            <div class="card__poster"><img class="poster" src="img/Интерстеллар.jpg" alt="Интерстеллар"></div>
+            <h3><a class="kinopoisk" href="https://www.kinopoisk.ru/film/258687/?socialAlias=NzQ1OTI3NDE%3D">Интерстеллар</a></h3>
+            <p class="genre">Фантастика · 2014</p>
+            <p>Путешествие через червоточину ради спасения человечества.</p>
+            </div>
+        <div class="card" data-genre="scifi">
+            <div class="card__poster"><img src="img/472809.jpg" alt="" class="poster"></div>
+            <h3><a href="https://www.kinopoisk.ru/film/447301/?socialAlias=NzQ1OTI3NDE%3D" class="kinopoisk">Начало</a></h3>
+            <p class="genre">Фантастика · 2010</p>
+            <p>Команда воров проникает в сны, чтобы украсть идею.</p>
+        </div>
+        <div class="card" data-genre="scifi">
+            <div class="card__poster"><img src="img/w1500_2708529.jpg" alt="Матрица" class="poster"></div>
+            <h3><a href="https://www.kinopoisk.ru/film/301/?socialAlias=NzQ1OTI3NDE%3D" class="kinopoisk">Матрица</a></h3>
+            <p class="genre">Фантастика · 1999</p>
+            <p>Хакер узнаёт, что реальность - это симуляция.</p>
+        </div>
+            <div class="card" data-genre="action">
+            <div class="card__poster"><img class="poster" src="img/джон уик.jpg" alt="джон уик"></div>
+            <h3><a class="kinopoisk" href="https://www.kinopoisk.ru/film/762738/?socialAlias=NzQ1OTI3NDE%3D">Джон Уик</a></h3>
+            <p class="genre">Боевик · 2014</p>
+            <p>Бывший наёмник возвращается ради мести.</p>
+        </div>
+        <div class="card" data-genre="action">
+            <div class="card__poster"><img src="img/терминатор.jpg" alt="" class="poster"></div>
+            <h3><a href="https://www.kinopoisk.ru/film/444/?socialAlias=NzQ1OTI3NDE%3D" class="kinopoisk">Терминатор 2</a></h3>
+            <p class="genre">Боевик · 1991</p>
+            <p>Робот из будущего защищает мальчика от киборга-убийцы.</p>
+        </div>
+        <div class="card" data-genre="comedy">
+            <div class="card__poster"><img class="poster" src="img/один6 дома.jpg" alt="один дома"></div>
+            <h3><a href="https://www.kinopoisk.ru/film/8124/?socialAlias=NzQ1OTI3NDE%3D" class="kinopoisk">Один дома</a></h3>
+            <p class="genre">Комедия · 1990</p>
+            <p>Мальчик остаётся один дома и защищает его от грабителей.</p>
+        </div>
+        <div class="card" data-genre="drama">
+            <div class="card__poster"><img class="poster" src="img/побег.jpg" alt="Побег из Шоушенка"></div>
+            <h3><a href="https://www.kinopoisk.ru/film/326/?socialAlias=NzQ1OTI3NDE%3D" class="kinopoisk">Побег из Шоушенка</a></h3>
+            <p class="genre">Драма · 1994</p>
+            <p>История надежды и дружбы в стенах тюрьмы.</p>
+        </div>
+        <div class="card" data-genre="drama">
+            <div class="card__poster"><img src="img/форест.jpg" alt="" class="poster"></div>
+            <h3><a href="https://www.kinopoisk.ru/film/448/?socialAlias=NzQ1OTI3NDE%3D" class="kinopoisk">Форрест Гамп</a></h3>
+            <p class="genre">Драма · 1994</p>
+            <p>История простого человека на фоне важных событий XX века.</p>
+        </div>
+        <div class="card" data-genre="comedy">
+            <div class="card__poster"><img src="img/мальчишник.jpg" alt="Мальчишник в Вегасе" class="poster"></div>
+            <h3><a href="https://www.kinopoisk.ru/film/426004/?socialAlias=NzQ1OTI3NDE%3D" class="kinopoisk">Мальчишник в Вегасе</a></h3>
+            <p class="genre">Комедия · 2009</p>
+            <p>Друзья пытаются вспомнить, что было на мальчишнике.</p>
+        </div>
+        </div>
+  </div>
+</section>
+
+<section id="about" class="section section--gray">
+  <div class="container">
+    <h2>О проекте</h2>
+    <p>КиноКаталог - учебный проект, созданный в рамках индивидуального проекта по специальности 09.02.07. Сайт позволяет быстро подобрать фильм по жанру.</p>
+  </div>
+</section>
+
+<section id="contacts" class="section">
+  <div class="container">
+    <h2>Контакты</h2>
+    <form class="form" onsubmit="event.preventDefault(); alert('Сообщение отправлено!');">
+      <input type="text" placeholder="Ваше имя" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Сообщение" rows="4" required></textarea>
+      <button type="submit" class="btn">Отправить</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2025 КиноКаталог - учебный проект, специальность 09.02.07</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
